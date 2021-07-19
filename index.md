@@ -1,5 +1,5 @@
 ---
-title: "Unstructured Thoughts"
+title: "Purr Programming - Coding with cats"
 ---
 
 Hi! Thanks for stopping by. I'm a self-taught software engineer specialising in backend development. I'm passionate about programming as a craft and this is my stab at maintaining a blog. 
