@@ -1,13 +1,12 @@
-title: Your awesome title
-author: GitHub User
-email: your-email@domain.com
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+title: Unstructured Thoughts
+author: Pierre Fouilloux
+description: >
+  Hi! Thanks for stopping by. I’m a self-taught software engineer specialising in backend development. 
+  I’m passionate about programming as a craft and this is my stab at maintaining a blog. 
+  You can expect various ramblings about general working practices, golang, rust and other random things that grab my interest.
+theme: minima
 
 # social links
-twitter_username: your-twitter-handle # DO NOT include the @ character, or else the build will fail!
-github_username:  your-github-handle # DO NOT include the @ character, or else the build will fail!
+github_username: pfouilloux
 
-show_excerpts: true # set to false to remove excerpts on the homepage
+show_excerpts: true
