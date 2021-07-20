@@ -1,6 +1,6 @@
 ---
-layout: post
-title:  "Hello world"
+title: "Hello world"
+date: 2021-07-20
 ---
 
 # Welcome
