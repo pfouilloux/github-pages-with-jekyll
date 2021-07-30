@@ -25,7 +25,7 @@ defaults:
       type: posts
     values:
       layout: single
-      author_profile: false
+      author_profile: true
       read_time: true
       comments: true
       share: true
@@ -47,9 +47,6 @@ include:
 author:
   name: "Pierre Fouilloux"
   avatar: # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio: >- # this means to ignore newlines until "baseurl:"
-    Hi! Thanks for stopping by. I'm a self-taught software engineer specialising in backend development. I'm passionate about programming as a craft and this is my stab at maintaining a blog.
-    You can expect various ramblings about general working practices, golang, rust and other random things that grab my interest.
   location: "Australia"
   email:
   links:
