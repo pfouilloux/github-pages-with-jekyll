@@ -4,6 +4,7 @@ title_separator: "-"
 subtitle: of coding and cats
 name: "Pierre Fouilloux"
 url: "https://blog.pierrefouilloux.com"
+repository: "pfouilloux/purr-programming"
 
 # Build settings
 remote_theme: "mmistakes/minimal-mistakes@4.24.0"
@@ -76,31 +77,16 @@ footer:
       icon: "fab fa-fw fa-linkedin"
       url: "https://au.linkedin.com/in/pierre-fouilloux-30b59239"
 
-comments: # TODO Pick one and use it
-  provider: # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
-  disqus:
-    shortname: # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
-  discourse:
-    server: # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
-  facebook:
-    # https://developers.facebook.com/docs/plugins/comments
-    appid:
-    num_posts: # 5 (default)
-    colorscheme: # "light" (default), "dark"
-  utterances:
-    theme: # "github-light" (default), "github-dark"
-    issue_term: # "pathname" (default)
+comments:
+  provider: "giscus"
   giscus:
-    repo_id: # Shown during giscus setup at https://giscus.app
-    category_name: # Full text name of the category
-    category_id: # Shown during giscus setup at https://giscus.app
-    discussion_term: # "pathname" (default), "url", "title", "og:title"
-    reactions_enabled: # '1' for enabled (default), '0' for disabled
-    theme: # "light" (default), "dark", "dark_dimmed", "transparent_dark", "preferred_color_scheme"
-  staticman:
-    branch: # "master"
-    endpoint: # "https://{your Staticman v3 API}/v3/entry/github/"
-reCaptcha:
+    repo_id: "MDEwOlJlcG9zaXRvcnkzODczMjg0NDM="
+    category_name: "General"
+    category_id: "DIC_kwDOFxYpu84B-o48"
+    discussion_term: "pathname"
+    reactions_enabled: '1'
+    theme: "transparent_dark"
+reCaptcha: # TODO: Evaluate how to do thins properly (with legal and whatnot)
   siteKey:
   secret:
 atom_feed:
