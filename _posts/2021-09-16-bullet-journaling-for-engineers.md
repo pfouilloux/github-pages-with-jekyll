@@ -91,7 +91,7 @@ otherwise.
 ### Tips and techniques
 
 - In a leadership role, I've used a downward chevron to indicate I've delegated a task to one of my team. I also use this once I've put something in
-  the team's backlog, as I don't need to keep track of it myself I don't want it cluttering things up. EXAMPLE PIC
+  the team's backlog, as I don't need to keep track of it myself I don't want it cluttering things up.
 - Sometimes I get a blank page that needs to be skipped over for the next weekly log. I usually save a space for these in my index and use them to jot
   down some notes for a meeting, write up a test plan or scribble a quick systems design. By having them in my index I can just look for the first
   blank space in my book when I find myself in need of a page or two.
