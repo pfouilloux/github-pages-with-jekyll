@@ -8,8 +8,6 @@ In this post I'd like to present a tool that's been very useful to me over the p
 by designer Ryder Caroll as a method of personal organisation[^1]. It involves writing down tasks, events and notes in short sentences paired with
 symbols (bullets), all in one notebook for easy retrieval.
 
-### Why is this useful?
-
 ### Quick overview of bullet journaling
 
 There's a ton of information already out there on different ways to use bullet journaling in your personal and/or professional life. I won't go too
