@@ -16,7 +16,7 @@ on [the excellent introduction at bulletjournal.com](https://bulletjournal.com/p
 
 ### The building blocks
 
-- **Events**: Represented by a small circle. I use these much, but [bulletjournal.com](https://bulletjournal.com/) explains them as "
+- **Events**: Represented by a small circle. I don't use these much, but [bulletjournal.com](https://bulletjournal.com/) explains them as "
   noteworthy moments in time".
   <br/>Example: `o Released v1 of the app!`
 - **Tasks**: Represented by a dot. These are things that we have to do, most of my bullet journal is tasks.
