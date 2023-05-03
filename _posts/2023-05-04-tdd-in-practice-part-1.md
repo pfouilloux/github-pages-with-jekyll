@@ -1,6 +1,6 @@
 ---
 title: "TDD in practice - Part 1: Introduction"
-date: 2022-01-01
+date: 2023-05-04
 classes: wide
 ---
 
@@ -48,7 +48,7 @@ For this series I'll be focusing on unit testing. We'll leave out the bits about
 > :information_source: Each post in this series will have its own tag in the github repository to make following along easier. This step is tagged with 
 > [0_spike](https://github.com/pfouilloux/thumbs/tree/0_spike)
 
-### Into the code
+### Step 0 - Writing the spike
 
 Once we've got our project set up the first thing to do is create a little main function so we can start running some code.
 We'll set it up with simple logic to read an image from disk and write the result to the output.

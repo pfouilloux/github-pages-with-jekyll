@@ -1,6 +1,6 @@
 ---
 title: "TDD in practice - Part 4: Refactoring and tips"
-date: 2022-04-07
+date: 2023-05-26
 classes: wide
 ---
 
