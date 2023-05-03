@@ -19,7 +19,7 @@ while we are developing it. It does this by focusing on writing the test first, 
 before starting the cycle again with the next test case. This is as far as we need to go describing TDD for this series but if you're keen to know more I recommend watching this
 [excellent talk by Ian Cooper](https://youtu.be/EZ05e7EMOLM) and/or reading [Kent Beck's TDD By Example](https://www.pearson.com/store/p/test-driven-development-by-example).
 
-## 0 - The spike
+## The spike
 
 Before we dig into it, let's take a step back. I've found TDD works best when I've got an idea what I'm building and how I'm going to go about building it.
 Ideally we want to start with the smallest component and work our way towards the finished product. In order to do this we need to know what components we 
