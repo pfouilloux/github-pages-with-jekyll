@@ -1,6 +1,6 @@
 ---
 title: "TDD in practice - Part 1: Introduction"
-date: 2023-05-04
+date: 2023-05-03
 classes: wide
 ---
 
@@ -173,10 +173,11 @@ Informed by the spike, let's quickly go over what we need to resize an image int
 6. Create a new file to store the thumbnail
 7. Encode the thumbnail image into the new file
 
-We can even take a stab at a mental model of the interfaces we'll want to build this with:
-- An ImageReader to load an image in and decode them into image object
-- An ImageWriter to create the thumbnail file and encode the thumbnail image into it
-- A SubImager to extract the a small square from the original image to use as thumbnail
+We can even take a stab at a mental model of the operations we'll be building this with:
+- `read` to load an image in and decode them into image object
+- `write` to create the thumbnail file and encode the thumbnail image into it
+- `crop` to extract a square from the original image
+- `resize` to resize the cropped image into a thumbnail
 
 Armed with this information we are in a much better position to write clear, consise code to handle this task.
 Arguably we could have come up with this without writing a spike, especially if this is a problem we've solved before and have experience to back us up.
