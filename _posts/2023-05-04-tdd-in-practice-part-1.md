@@ -46,13 +46,13 @@ For this series I'll be focusing on unit testing. We'll leave out the bits about
 100x100 square
 
 > :information_source: Each post in this series will have its own tag in the github repository to make following along easier. This step is tagged with 
-> [0_spike](https://github.com/pfouilloux/thumbs/tree/0_spike)
+> [1.1-spike](https://github.com/pfouilloux/thumbs/tree/1.1-spike)
 
 ### Step 0 - Writing the spike
 
 Once we've got our project set up the first thing to do is create a little main function so we can start running some code.
 We'll set it up with simple logic to read an image from disk and write the result to the output.
-You can download a copy of the [testdata/test.jpeg from github](https://github.com/pfouilloux/thumbs/blob/0_spike/testdata/test.jpeg)
+You can download a copy of the [testdata/test.jpeg from github](https://github.com/pfouilloux/thumbs/blob/1.1-spike/testdata/test.jpeg)
 `main.go`
 ```go
 package main
