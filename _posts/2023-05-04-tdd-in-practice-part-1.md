@@ -52,7 +52,8 @@ For this series I'll be focusing on unit testing. We'll leave out the bits about
 
 Once we've got our project set up the first thing to do is create a little main function so we can start running some code.
 We'll set it up with simple logic to read an image from disk and write the result to the output.
-You can download a copy of the [testdata/test.jpeg from github](https://github.com/pfouilloux/thumbs/blob/1.1-spike/testdata/test.jpeg)
+You can download a copy of the [testdata/test.jpeg from github](https://github.com/pfouilloux/thumbs/blob/1.1-spike/testdata/test.jpeg){:target="_blank"}
+
 `main.go`
 ```go
 package main
@@ -83,10 +84,11 @@ func main() {
 	}
 }
 ```
-Running this code will copy the image in 'testdata/test.jpeg' to 'testout/test_thumb.jpg'
+Running this code will copy the image in `testdata/test.jpeg` to `testout/test_thumb.jpg`
 
 
 Next we add the image resizing code to create a real thumbnail.
+
 `main.go`
 ```go
 package main
@@ -147,7 +149,7 @@ func main() {
 	}
 }
 ```
-Running this code will create a thumbnail of the image in 'testdata/test.jpeg' in 'testout/test_thumb.jpg'.
+Running this code will create a thumbnail of the image in `testdata/test.jpeg` in `testout/test_thumb.jpg`.
 
 #### Learnings and planning
 
