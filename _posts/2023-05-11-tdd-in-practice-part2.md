@@ -1,10 +1,10 @@
 ---
 title: "TDD in practice - Part 2: The test harness"
-date: 2023-05-12
+date: 2023-05-11
 classes: wide
 ---
 
-In [the first part of this series](/2023/05/04/tdd-in-practice-part-1.html) we briefly went over what a spike is and why it can be a valuable tool.
+In [the first part of this series](/2023/05/03/tdd-in-practice-part-1.html) we briefly went over what a spike is and why it can be a valuable tool.
 We also wrote a spike and arrived at the following list of tasks:
 - Load the original image
 - Decode the original image into an image object
@@ -61,9 +61,15 @@ First we'll start by writing a basic test harness. We want it to validate two th
 1. Is the cropped image the expected size?
 2. Does the cropped image contain the expected pixels? Eg: if we crop towards the center we'd expect to get the center of the original image back.
 
+Briefly, a test harness is a tool to exercise a bit of code and validate it does what is expected. Usually it starts by setting up the initial state of the system, then it executes the code under test from that
+state and finally it asserts that the state of the system after the code under test has executed. In our case, this means:
+- setting up a dummy image
+- executing the crop operation on that dummy image
+- asserting that the result of the crop is the expected size and contains the expected portion of the dummy image
+
 This step is critical in the TDD process. This is where we design our public API from the perspective of someone calling it. As we're writing this test harness we're figuring out
 what kind of inputs we'll need, how to supply dependencies, etc. I like to start with the smallest possible unit of code, as deep into my mental model as I can. Having the building blocks ready
-to go makes it a lot easier to build tests for operations that compose them. If you're struggling to define a mental model of your code, spike it out and build the model from there like we did in [Part 1](/2023/05/04/tdd-in-practice-part-1.html)
+to go makes it a lot easier to build tests for operations that compose them. If you're struggling to define a mental model of your code, spike it out and build the model from there like we did in [Part 1](/2023/05/03/tdd-in-practice-part-1.html)
 
 > :information_source: This step is tagged with [2.1-TestHarness-Red](https://github.com/pfouilloux/thumbs/tree/2.1-TestHarness-Red)
 
