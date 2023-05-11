@@ -2,6 +2,11 @@
 title: "TDD in practice - Part 1: Introduction"
 date: 2023-05-03
 classes: wide
+header:
+  image: /assets/images/tdd_banner.png
+  thumb: /assets/images/tdd_thumb.png
+  credit: Gopher crash test dummy by Egon Elbre used under CC0 license
+  credit-link: github.com/egonelbre/gophers
 ---
 
 I'm a big proponent of test-driven development because it helps me reflect on my code's behavior and approach programming tasks more effectively.

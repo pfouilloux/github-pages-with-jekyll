@@ -2,6 +2,11 @@
 title: "TDD in practice - Part 2: The test harness"
 date: 2023-05-11
 classes: wide
+header:
+  image: /assets/images/tdd_banner.png
+  thumb: /assets/images/tdd_thumb.png
+  credit: Gopher crash test dummy by Egon Elbre used under CC0 license
+  credit-link: github.com/egonelbre/gophers
 ---
 
 In [the first part of this series](/2023/05/03/tdd-in-practice-part-1.html) we briefly went over what a spike is and why it can be a valuable tool.
