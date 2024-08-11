@@ -5,6 +5,7 @@ classes: wide
 header:
   image: /assets/images/tdd_banner.png
   thumb: /assets/images/tdd_thumb.png
+  caption: Gopher by [Egon Elbre](github.com/egonelbre/gophers)
   credit: Gopher crash test dummy by Egon Elbre used under CC0 license
   credit-link: github.com/egonelbre/gophers
 ---
@@ -22,7 +23,7 @@ We also wrote a spike and arrived at the following list of tasks:
 And a mental model of operations:
 - `read` to load an image in and decode them into image object
 - `write` to create the thumbnail file and encode the thumbnail image into it
-- `crop` to extract the a small square from the original image to use as thumbnail
+- `crop` to extract a square from the original image to use as thumbnail
 - `resize` to resize the cropped image into a thumbnail
 
 For the rest of the series we'll focus on the `crop` operation because it's the one that has the most going on. The others are trivial to implement and I'll
@@ -60,7 +61,7 @@ writing throwaway code? This is the opposite. TDD is a tool we can keep in our b
 don't use TDD. If we're writing a one shot app for something like an marketing event, TDD may not be the right tool. But if we're expecting people to read and work on our code months and years
 from now, TDD can help make code that'll stand the test of time.
 
-## Step 1 - Writing our test harness
+## Step 2 - Writing our test harness
 
 First we'll start by writing a basic test harness. We want it to validate two things:
 1. Is the cropped image the expected size?
@@ -142,7 +143,7 @@ func (scn scenario) testCrop(t *testing.T) {
 
   // we check the size of the images to tell us if we've cropped an image of the right size
   if scn.want.Bounds() != got.Bounds() {
-    t.Errorf("expected an %dx%d image but got an %dx%d image", scn.want.Bounds().Dx(), scn.want.Bounds().Dy(), got.Bounds().Dx(), got.Bounds().Dx())
+    t.Errorf("expected an %dx%d image but got an %dx%d image", scn.want.Bounds().Dx(), scn.want.Bounds().Dy(), got.Bounds().Dx(), got.Bounds().Dy())
   }
 
   // finally we check that the content is the same as what we expected
@@ -234,7 +235,7 @@ func (scn scenario) testCrop(t *testing.T) {
 
 func (scn scenario) assertIsExpectedSize(t testing.TB, got image.Image) {
   if scn.want.Bounds().Min != got.Bounds().Min || scn.want.Bounds().Max != got.Bounds().Max {
-    t.Errorf("expected an %dx%d image but got an %dx%d image", scn.want.Bounds().Dx(), scn.want.Bounds().Dy(), got.Bounds().Dx(), got.Bounds().Dx())
+    t.Errorf("expected an %dx%d image but got an %dx%d image", scn.want.Bounds().Dx(), scn.want.Bounds().Dy(), got.Bounds().Dx(), got.Bounds().Dy())
   }
 }
 
@@ -275,6 +276,6 @@ Having the ability to tell that our code does what it's supposed to up front sav
 - We validate our programming decisions early and often, avoiding big rewrites when we find a bug.
 - It forces us to write modular code, which makes reuse and modification easier and quicker.
 
-Come back next week when we'll be writing some tests and building out the cropping functionality.
+In [part 3 of this series](/2023/06/16/tdd-in-practice-part3.html) we'll be writing some tests and building out the cropping functionality.
 
 Hope this was helpful and that you've learned something and/or this triggered an interesting train of thought. Once again please don't hesitate to share your thoughts, comments, etc in the comments section!

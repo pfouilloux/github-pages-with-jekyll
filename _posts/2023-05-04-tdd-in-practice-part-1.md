@@ -5,6 +5,7 @@ classes: wide
 header:
   image: /assets/images/tdd_banner.png
   thumb: /assets/images/tdd_thumb.png
+  caption: Gopher by [Egon Elbre](github.com/egonelbre/gophers)
   credit: Gopher crash test dummy by Egon Elbre used under CC0 license
   credit-link: github.com/egonelbre/gophers
 ---
@@ -53,7 +54,7 @@ For this series I'll be focusing on unit testing. We'll leave out the bits about
 > :information_source: Each post in this series will have its own tag in the github repository to make following along easier. This step is tagged with 
 > [1.1-spike](https://github.com/pfouilloux/thumbs/tree/1.1-spike)
 
-### Step 0 - Writing the spike
+### Step 1 - Writing the spike
 
 Once we've got our project set up the first thing to do is create a little main function so we can start running some code.
 We'll set it up with simple logic to read an image from disk and write the result to the output.
@@ -194,7 +195,7 @@ Third it does tend to tease out most of the big hidden blockers early in the pro
 
 ## Next steps
 
-Next we'll dive into building the SubImager implementation using TDD techniques. We'll start with building out the tests to cover the common cases in the next post.
+In [part 2 of this series](/2023/05/11/tdd-in-practice-part2.html) we'll dive into building the SubImager implementation using TDD techniques. We'll start with building out the tests to cover the common cases in the next post.
 The following will focus on implementing the SubImager itself. In the final post we'll go over refactoring our implementation for clarity and maintainability.
 
 Hope this was helpful and that you've learned something and/or this triggered an interesting train of thought. Once again please don't hesitate to share your thoughts, comments, etc in the comments section! 
